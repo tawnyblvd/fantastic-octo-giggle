@@ -107,6 +107,7 @@ h4 {
 ul {
   list-style-type: none;
 }
+
 /* -- Base Header-Footer styles --*/
 .header {
   display: flex;
@@ -145,6 +146,7 @@ ul {
 /* -- Footer styles --*/
 
 /* -- Mobile styles - Homepage -- */
+/*-- Hero section --*/
 .hero-area {
   display: flex;
   /* height: 500px; */
@@ -157,6 +159,19 @@ ul {
   display: flex;
   flex-direction: column;
 }
+/*-- Features section --*/
+.features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.features-items {
+  display: flex;
+  flex-direction: column;
+}
+/*-- Reviews section --*/
+
 /* ==========================================================================
      Helper classes
      ========================================================================== */
