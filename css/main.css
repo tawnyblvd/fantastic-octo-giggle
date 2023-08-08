@@ -87,6 +87,76 @@ textarea {
      Author's custom styles
      ========================================================================== */
 
+/* -- General styles -- */
+html {
+  font-size: 1rem;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  color: #e2e3ed;
+}
+
+h2,
+h3,
+h4 {
+  font-family: "Poppins", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+/* -- Base Header-Footer styles --*/
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.header,
+.footer {
+  background-color: #202322;
+}
+
+/* -- Header styles --*/
+.header .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.logo {
+  width: 90%;
+}
+
+.navigation ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* -- Footer styles --*/
+
+/* -- Mobile styles - Homepage -- */
+.hero-area {
+  display: flex;
+  /* height: 500px; */
+  background: #2a423a url(../img/unplugged-retreat.jpg) center no-repeat;
+  background-size: cover;
+  justify-content: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
 /* ==========================================================================
      Helper classes
      ========================================================================== */
