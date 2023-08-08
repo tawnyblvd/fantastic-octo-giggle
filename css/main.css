@@ -137,6 +137,11 @@ ul {
 .logo {
   width: 90%;
 }
+/* 
+.header-divider {
+  background-color: #3a3a3a;
+  border: 10px solid #3a3a3a;
+} */
 
 .navigation ul {
   display: flex;
@@ -168,7 +173,13 @@ ul {
 
 .features-items {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  flex-flow: column wrap;
+}
+
+.features i {
+  font-size: 3.75em;
+  margin-bottom: 40px;
 }
 /*-- Reviews section --*/
 
