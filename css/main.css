@@ -98,14 +98,55 @@ body {
   color: #e2e3ed;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 500;
+}
+
+h1 {
+  font-family: "Poppins", "Helvetica", "Arial", sans-serif;
+  font-size: 2.25em;
+  line-height: 2.6875em;
+}
+
 h2,
 h3,
 h4 {
   font-family: "Poppins", sans-serif;
 }
 
+h2 {
+  font-size: 1.875em;
+}
+
+h3,
+h4 {
+  font-size: 1.125em;
+}
+
 ul {
   list-style-type: none;
+}
+
+p {
+  font-size: 0.875em;
+  line-height: 1.125em;
+}
+
+a {
+  color: #e2e3ed;
+  text-decoration: none;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.address {
+  font-style: normal;
 }
 
 /* -- Base Header-Footer styles --*/
@@ -143,12 +184,35 @@ ul {
   border: 10px solid #3a3a3a;
 } */
 
+.navigation {
+  font-size: 1.125em;
+  font-weight: bold;
+}
+
 .navigation ul {
   display: flex;
   justify-content: space-around;
 }
 
 /* -- Footer styles --*/
+.contact {
+  background-color: #2a423a;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 60%;
+}
+
+.social-icons p {
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background-color: #527158;
+}
 
 /* -- Mobile styles - Homepage -- */
 /*-- Hero section --*/
@@ -160,15 +224,44 @@ ul {
   justify-content: center;
 }
 
-.form {
-  display: flex;
-  flex-direction: column;
+.aside {
+  background-color: #527158;
 }
+
+.aside .form {
+  margin-top: 30px;
+}
+
+input[type="text"] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+  font-size: 1.125em;
+  font-weight: 500;
+}
+
+input[type="button"] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 /*-- Features section --*/
 .features {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: url(../img/unplugged-retreat-features.jpg);
 }
 
 .features-items {
@@ -182,7 +275,13 @@ ul {
   margin-bottom: 40px;
 }
 /*-- Reviews section --*/
+.reviews {
+  background-color: #2a423a;
+}
 
+.reviews h2 {
+  line-height: 1.875em;
+}
 /* ==========================================================================
      Helper classes
      ========================================================================== */
