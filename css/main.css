@@ -88,61 +88,61 @@ textarea {
      ========================================================================== */
 
 /* -- General styles -- */
-html {
+/* html {
   font-size: 1rem;
-}
+} */
 
-body {
+/* body {
   font-family: "Open Sans", sans-serif;
   font-size: 1em;
   color: #e2e3ed;
+  max-width: 1280px;
+} */
+
+/* .section {
+  width: 100%;
+} */
+
+.content-wrapper {
+  width: 90%;
+  outline: 5px solid purple;
 }
 
-h1,
-h2,
-h3,
-h4 {
+.headings {
   font-weight: 500;
 }
 
 h1 {
   font-family: "Poppins", "Helvetica", "Arial", sans-serif;
-  font-size: 2.25em;
-  line-height: 2.6875em;
+  /* font-size: 2.25em;
+  line-height: 2.6875em; */
 }
 
-h2,
-h3,
-h4 {
+.subheadings {
   font-family: "Poppins", sans-serif;
 }
 
-h2 {
+/* h2 {
   font-size: 1.875em;
-}
+} */
 
-h3,
+/* h3,
 h4 {
   font-size: 1.125em;
-}
+} */
 
-ul {
+.list {
   list-style-type: none;
 }
 
-p {
+/* .paragraph {
   font-size: 0.875em;
   line-height: 1.125em;
-}
+} */
 
 a {
   color: #e2e3ed;
   text-decoration: none;
-}
-
-.form {
-  display: flex;
-  flex-direction: column;
 }
 
 .address {
@@ -150,24 +150,18 @@ a {
 }
 
 /* -- Base Header-Footer styles --*/
+/* .header,
+.footer {
+  background-color: #202322;
+} */
+
+/* -- Header styles --*/
 .header {
+  /* margin: 15px auto; */
   display: flex;
   justify-content: center;
 }
 
-.footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.header,
-.footer {
-  background-color: #202322;
-}
-
-/* -- Header styles --*/
 .header .content-wrapper {
   display: flex;
   justify-content: center;
@@ -175,62 +169,94 @@ a {
   flex-flow: row wrap;
 }
 
-.logo {
-  width: 90%;
-}
-/* 
-.header-divider {
-  background-color: #3a3a3a;
-  border: 10px solid #3a3a3a;
+/* .figure {
+  width: 100%;
+  margin: 0;
 } */
 
-.navigation {
+/* .logo {
+  width: 60%;
+} */
+
+/* .header-divider {
+  margin: 10px auto 20px auto;
+} */
+
+/* .navigation {
   font-size: 1.125em;
   font-weight: bold;
-}
+  margin: 0 auto 15px auto;
+  width: 60%;
+} */
 
-.navigation ul {
+.header .navigation .list {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
+  margin: 0;
 }
 
 /* -- Footer styles --*/
-.contact {
-  background-color: #2a423a;
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-.social-icons {
+/* .footer .content-wrapper {
+  width: 55%;
+  margin: 50px 0;
+} */
+
+/* .contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+
+.footer .social-icons {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  width: 60%;
+  /* width: 60%; */
 }
 
-.social-icons p {
-  width: 21px;
-  height: 21px;
+.footer .social-icons p {
+  /* width: 21px;
+  height: 21px; */
   border-radius: 50%;
   background-color: #527158;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* -- Mobile styles - Homepage -- */
 /*-- Hero section --*/
 .hero-area {
   display: flex;
-  /* height: 500px; */
-  background: #2a423a url(../img/unplugged-retreat.jpg) center no-repeat;
-  background-size: cover;
+  /* background: #2a423a url(../img/unplugged-retreat.jpg) center no-repeat;
+  background-size: cover; */
   justify-content: center;
+  flex-flow: row wrap;
+  /* margin: 50px auto; */
 }
 
+/* Aside */
 .aside {
-  background-color: #527158;
+  /* background-color: #527158;
+  margin: 50px auto; */
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
 }
 
-.aside .form {
+/* .aside .form {
   margin-top: 30px;
-}
+} */
 
 input[type="text"] {
   box-sizing: border-box;
@@ -259,29 +285,36 @@ input[type="button"] {
 /*-- Features section --*/
 .features {
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  align-items: center;
-  background: url(../img/unplugged-retreat-features.jpg);
+  /* background: url(../img/unplugged-retreat-features.jpg); */
+  /* margin: 50px auto; */
 }
 
 .features-items {
   display: flex;
   justify-content: center;
-  flex-flow: column wrap;
+  align-items: flex-start;
+  flex-flow: row wrap;
 }
 
-.features i {
+/* .features i {
   font-size: 3.75em;
   margin-bottom: 40px;
-}
+} */
+
 /*-- Reviews section --*/
 .reviews {
-  background-color: #2a423a;
+  /* background-color: #2a423a;
+  margin: 50px auto; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.reviews h2 {
+/* .reviews h2 {
   line-height: 1.875em;
-}
+} */
 /* ==========================================================================
      Helper classes
      ========================================================================== */
