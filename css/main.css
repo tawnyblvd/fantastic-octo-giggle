@@ -175,9 +175,10 @@ a {
   width: 60%;
 } */
 
-/* .header-divider {
-  margin: 10px auto 20px auto;
-} */
+.header-divider {
+  /* margin: 10px auto 20px auto; */
+  width: 90%;
+}
 
 .navigation {
   /* font-size: 1.125em;
@@ -191,6 +192,7 @@ a {
   flex-direction: row;
   justify-content: space-around;
   margin: 0;
+  width: 50%;
 }
 
 /* -- Footer styles --*/
@@ -203,7 +205,7 @@ a {
 
 .footer .content-wrapper {
   width: 55%;
-  /* margin: 50px 0; */
+  /* margin: 50px 0; */ /* per Skillcrush */
 }
 
 /* .contact {
@@ -297,6 +299,7 @@ input[type="button"] {
   justify-content: center;
   align-items: flex-start;
   flex-flow: row wrap;
+  width: 61%;
 }
 
 .features .paragraph {
@@ -322,6 +325,10 @@ input[type="button"] {
 /* .reviews h2 {
   line-height: 1.875em;
 } */
+
+.reviews h3 {
+  width: 52%;
+}
 
 /* Mobile styles - About page */
 .mission {
